@@ -8,12 +8,55 @@
     <title>Form Project</title>
 </head>
 <body>
-<div class=”container”>
+<div class="container">
 <form method="post" action="#">
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-</div>
+<form class="row g-3">
+    <div class="row">
+        <div class="col-md-6">
+            <label for="inputFirstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="inputFirstName">
+        </div>
+        <div class="col-md-6">
+            <label for="inputLastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="inputLastName">
+        </div>
+    </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="inputAddress">
+  </div>
+  <div class="row">
+        <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+                <option>Kentucky</option> 
+                <option>Ohio</option> 
+                <option selected>Michigan</option>
+                <option>Indiana</option>
+                <option>Illinois</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+        </div>
+    </div>
+  <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioMale" value="option1">
+        <label class="form-check-label" for="inlineRadioMale">Male</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioFemale" value="option2">
+        <label class="form-check-label" for="inlineRadioFemale">Female</label>
+    </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Register</button>
+  </div>
+</form>
 </form>
 </div>
 </body>
