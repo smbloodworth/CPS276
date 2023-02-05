@@ -42,7 +42,7 @@
         </div>
         <div class="col-md-2">
             <label for="inputZip" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
+            <input type="text" class="form-control" id="inputZip" maxlength="5">
         </div>
     </div>
   <div class="form-check form-check-inline">
