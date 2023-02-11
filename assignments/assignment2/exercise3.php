@@ -16,7 +16,7 @@ while ($rowCount < $rowCountSetter) {
     $cellLabel = 0;//
     while ($cellCount < $cellCountSetter) {
         $cellLabel++;//Updates cell label to be print to the screen
-        $tableBuilder .= "<td> Row $rowLabel Cell $cellLabel</td>"; //Creates new cell
+        $tableBuilder .= "<td> Row {$rowLabel} Cell {$cellLabel}</td>"; //Creates new cell
         $cellCount++;
     }
     $rowCount++;
@@ -24,7 +24,6 @@ while ($rowCount < $rowCountSetter) {
 }
 
 $tableBuilder .= "</table>";//Closes table
-
 
 ?>
 
