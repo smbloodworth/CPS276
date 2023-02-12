@@ -5,19 +5,19 @@ $subListQuantity = 5;//Sets the number of items in the sublists
 $mainListCount = 0;//incrementing variable for tracking main list building
 $subListCount =0;//incrementing variable for tracking sublist building
 
-$listBuilder = "<ul>";
+$listBuilder = "<ul>"; //Creates main list
 
     while ($mainListCount < $mainListQuantity) {
         $mainListCount++;
-        $listBuilder .= "<li>$mainListCount<ul>";
+        $listBuilder .= "<li>$mainListCount<ul>";//Creates bullet in main list and starts sublist
         $subListCount = 0;
         while ($subListCount < $subListQuantity) {
             $subListCount++;
-            $listBuilder .= "<li>$subListCount</li>";
+            $listBuilder .= "<li>$subListCount</li>";//Creates bullet in sublist
        }
-       $listBuilder .= "</ul>";
+       $listBuilder .= "</ul>";//Closes sublist
     }
-$listBuilder .= "</ul>";
+$listBuilder .= "</ul>";//Closes main list
 
 ?>
 
