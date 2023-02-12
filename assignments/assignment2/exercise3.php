@@ -36,6 +36,6 @@ $tableBuilder .= "</table>";//Closes table
     <title>Exercise 3 - Table Builder</title>
 </head>
 <body>
-    <p><?php echo $tableBuilder; ?></p>
+    <p><?php echo $tableBuilder; ?></p> <!--This line generates and outputs the desired table -->
 </body>
 </html>
